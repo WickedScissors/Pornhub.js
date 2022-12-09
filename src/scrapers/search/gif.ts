@@ -1,6 +1,5 @@
 import type { CheerioAPI } from 'cheerio'
 import _urlcat from 'urlcat'
-const urlcat = (_urlcat as unknown as { default: typeof _urlcat }).default;
 import type { Engine } from '../../core/engine'
 import type { Counting, GifSearchOptions, Paging } from '../../types'
 import { Route } from '../../apis'
@@ -8,6 +7,8 @@ import { getAttribute, getCheerio, getDataAttribute } from '../../utils/cheerio'
 import { BASE_URL } from '../../utils/constant'
 import { removeProtectionBracket } from '../../utils/utils'
 import { parseCounting, parsePaging } from './base'
+
+const urlcat = (_urlcat as unknown as { default: typeof _urlcat }).default
 
 export interface GifSearchResult {
     title: string
