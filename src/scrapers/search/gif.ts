@@ -8,7 +8,7 @@ import { BASE_URL } from '../../utils/constant'
 import { removeProtectionBracket } from '../../utils/utils'
 import { parseCounting, parsePaging } from './base'
 
-const urlcat = (_urlcat as unknown as { default: typeof _urlcat }).default
+const urlcat = _urlcat.default
 
 export interface GifSearchResult {
     title: string

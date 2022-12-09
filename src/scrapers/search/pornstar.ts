@@ -7,7 +7,7 @@ import { getAttribute, getCheerio, getDataAttribute } from '../../utils/cheerio'
 import { BASE_URL } from '../../utils/constant'
 import { parseCounting, parsePaging } from './base'
 
-const urlcat = (_urlcat as unknown as { default: typeof _urlcat }).default
+const urlcat = _urlcat.default
 
 export interface PornstarSearchResult {
     name: string
